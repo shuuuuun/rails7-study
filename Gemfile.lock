@@ -169,6 +169,8 @@ GEM
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.2-x86_64-darwin)
       railties (>= 6.0.0)
+    tailwindcss-rails (2.0.2-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.1.0)
     turbo-rails (1.0.0)
       actionpack (>= 6.0.0)
@@ -195,6 +197,7 @@ PLATFORMS
   arm64-darwin-20
   arm64-darwin-21
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
