@@ -7,6 +7,7 @@ gem "rails", "~> 7.0.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 # gem "sprockets-rails"
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 
 # Use sqlite3 as the database for Active Record
@@ -25,6 +26,10 @@ gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+
+# Bundle and process CSS [https://github.com/rails/cssbundling-rails]
+gem "cssbundling-rails"
+# gem "tailwindcss-rails", "~> 2.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -72,5 +77,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "tailwindcss-rails", "~> 2.0"
