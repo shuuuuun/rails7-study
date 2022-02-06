@@ -4,8 +4,8 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller.ts"
-application.register("hello", HelloController)
+import HomeController from "./home_controller.ts"
+application.register("home", HomeController)
 
 import ResetFormController from "./reset_form_controller.ts"
 application.register("reset-form", ResetFormController)
