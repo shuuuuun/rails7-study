@@ -22,6 +22,7 @@ module Rails7Study
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
+      g.jbuilder false
       g.helper false
       g.decorator false
       # g.template_engine :haml
