@@ -34,14 +34,15 @@ build({
   bundle: true,
   sourcemap: isDev,
   minify: !isDev,
+  logLevel: 'info',
   watch: isWatch && {
-    onRebuild(error, result) {
-      if (error) console.error('watch build failed:', error)
-      else console.log('watch build succeeded:', result)
-    },
+    // onRebuild(error, result) {
+    //   if (error) console.error('watch build failed:', error)
+    //   else console.log('watch build succeeded:', result)
+    // },
   },
   plugins: [envPlugin],
 }).then(_result => {
-  console.log('build completed!')
-  if (isWatch) console.log('watching...')
+  // console.log('build completed!')
+  // if (isWatch) console.log('watching...')
 }).catch(() => process.exit(1))
