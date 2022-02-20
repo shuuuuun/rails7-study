@@ -6,7 +6,18 @@ export default class extends Controller {
   // declare element: HTMLFormElement
   // get element(): HTMLFormElement
 
+  initialize() {
+    console.log("initialize!")
+  }
+  connect() {
+    console.log("connect!")
+  }
+  disconnect() {
+    console.log("disconnect!")
+  }
+
   reset() {
+    console.log("reset")
     this.element.reset()
   }
 }
