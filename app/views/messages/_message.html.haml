@@ -1,3 +1,2 @@
 %p{:id => "#{dom_id message}"}
-  = message.created_at.to_fs(:short)
-  \: #{message.content}
+  = "#{message.created_at.to_fs(:short)}: #{message.content}"
