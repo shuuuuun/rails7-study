@@ -36,6 +36,7 @@ gem "cssbundling-rails"
 
 # https://github.com/k0kubun/hamlit, https://github.com/mfung/hamlit-rails
 gem 'hamlit-rails'
+# gem 'html2haml' # Required to run hamlit:erb2haml
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"

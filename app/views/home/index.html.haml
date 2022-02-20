@@ -1,0 +1,12 @@
+.w-full
+  %h1.font-bold.text-4xl Home#index
+  %div{"data-controller" => "home"}
+    .flex.justify-between.items-center.my-5
+      %div
+        %span name:
+        %input{"data-home-target" => "name", :type => "text"}/
+      %button.my-5.rounded-lg.py-3.px-5.bg-blue-600.text-white.block.font-medium{"data-action" => "click->home#greet"} Greet
+    %div{"data-home-target" => "output"}
+  %ul.my-5.font-medium
+    %li= link_to '> Rooms', rooms_path, class: "py-3 block"
+    %li= link_to '> Posts', posts_path, class: "py-3 block"
