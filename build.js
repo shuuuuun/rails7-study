@@ -1,8 +1,8 @@
-const path = require('path')
+// const path = require('path')
 const { build } = require('esbuild')
 
-const NODE_ENV = process.env.NODE_ENV ?? 'development'
-const isDev = NODE_ENV === 'development'
+process.env.NODE_ENV ||= 'development'
+const isDev = process.env.NODE_ENV === 'development'
 const isWatch = process.argv.includes('--watch')
 
 // ref. https://esbuild.github.io/plugins/#using-plugins
